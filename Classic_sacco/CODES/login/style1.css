@@ -1,0 +1,48 @@
+body{
+    background-color: rgb(103, 197, 189);
+}
+#frm{
+border: solid gray 1px;
+width:25%;
+border-radius: 2px;
+margin: 120px auto;
+background:#ffffff;
+padding: 50px;
+}
+#btn{
+color: #fff;
+background: #337ab7;
+padding: 7px;
+margin-left: 70%;
+}
+#form-container{
+ border: solid gray 1px;
+ width:25%;
+ background-color: aqua;
+ margin: 120px auto;
+ justify-content: center;
+ padding: 50px;
+ text-align: center;
+}
+div.alert.alert-danger{
+    color: #fc021b;
+    border-color: #f5c6cb;
+
+}
+div.alert.alert-success{
+    color: green;
+}
+a{
+    color: blue;
+    text-decoration: none;
+}
+.input_box{
+    display: inline;
+    align-items: center;
+    width: 80%;
+    height: 25%;
+    background: transparent;
+    backdrop-filter: blur(50px);
+
+
+}

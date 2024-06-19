@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="about.css">
+    <link rel="shortcut icon" href="../../CLASSIC SACO LOGO.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    <title>Leadership</title>
+</head>
+<body>
+    
+    <!-- SECTION 1 -->
+    <div class="head-cont">
+        <div>
+            <img src="../../CLASSIC SACO LOGO.png">
+        </div>
+        <div>
+            <h1>CLASSIC SACCO</h1>
+        </div>
+    </div>
+    <section id="sec-1">
+            <nav id="navigation">
+                <a href="../HOME/index.html">HOME</a>
+                <div class="dropdown">
+                    <a class="dropBtn" href="#">LOGIN <i class="arrow"></i></a>
+                    <div class="drop-content">
+                        <a href="#">JOIN US</a>
+                        <a href="#">LOGIN</a>
+                    </div>
+                 </div>
+                 <div class="dropdown">
+                    <a class="dropBtn active" href="#">ABOUT US <i class="arrow"></i></a>
+                    <div class="drop-content">
+                        <a href="../About/membership.html">MEMBERSHIP</a>
+                        <a href="../About/leadership.html">LEADERSHIP</a>
+                        <a href="../About/history.html">HISTORY</a>
+                    </div>
+                 </div>
+                 <div class="dropdown">
+                    <a class="dropBtn" href="../LOANS/loan.html">LOANS <i class="arrow"></i></a>
+                    <div class="drop-content">
+                        <a href="../LOANS/elimu.html">ELIMU LOAN</a>
+                        <a href="../LOANS/emergency loan.html">EMERGENCY LOAN</a>
+                        <a href="../LOANS/karibu loan.html">KARIBU</a>
+                        <a href="../LOANS/personal.html">PERSONAL LOAN</a>
+                        <a href="../LOANS/development.html">DEVELOPMENT LOAN</a>
+                    </div>
+                 </div>
+                <a href="../Services/services.html">SERVICES</a>
+                <a href="../contact us/contact.html">CONTACT US</a>
+            </nav>
+
+            <script>
+                let navbar = document.getElementById("navigation");
+          
+          let shouldstickposition = navbar.offsetTop;
+                
+          function addorremovestickyclass(){
+            if (window.pageYOffset >= shouldstickposition) {
+                navbar.classList.add("sticky");
+            } else{
+                navbar.classList.remove("sticky");
+            }
+          }
+                
+           window.onscroll = () => {
+              addorremovestickyclass();
+          };
+          window.onresize = () => {
+          shouldstickposition = navbar.offsetTop;
+            };
+            </script>
+    </section>
+    <div class="board">
+        <h2>BOARD OF DIRECTORS</h2>
+        <div class="directors">
+            
+            <img src="images/director Smith.jpg" alt="director">
+            <p>Smith Rowe, Chairman</p>
+            <img src="images/director Morillo.jpg" alt="director">
+            <p>Meth Merillo, Vice Chair</p>
+            <img src="images/member.jpg" alt="director">
+            <p>James Otieno, Treasure</p>
+        </div>
+        <div class="header">
+            <h2>SENIOR MANAGEMENT</h2>
+        </div>
+        <div class="senior">
+            <img src="images/sec.jpg" alt="senior">
+            <p>Emilly Kerr,Secretary  </p>
+            <img src="images/dream.jpg" alt="senior">
+            <p>Sam Scott,Senior Member</p>
+            <img src="images/join.jpg" alt="senior">
+            <p>Omollo Ian,Senior Member</p>
+        </div>
+    </div>
+<!-- SECTION -->
+
+<section id="footer">
+    <div class="down-nav">
+        <h1>GET IN TOUCH</h1>
+        <div class="cont-info">
+        <div class="info">
+        <p>Call us</p><hr>
+       <i class="fa fa-phone"></i><a href="tel:+254758226928"> +254 75 822 6928</a><br>
+       <i class="fa fa-phone"></i><a href="tel:+254731733407"> +254 73 173 3407</a>
+        </div>
+        <div class="info">
+            <p>Text</p><hr>
+           <i class="fa fa-whatsapp"></i> <a href="https://wa.me/254731733407?text=Hello%20there%20I%20would%20like%20to%20know%20more%20on%20si.SWHAM"> +254 73 173 3407</a>
+            </div>
+        <div class="info">
+        <p>Email</p><hr>
+       <i class="fa fa-envelope-open"></i> <a href="mailto:dennisndwiga32@gmail.com">classicsacco@gmail.com</a>
+        </div>
+    </div>
+    </div>
+    <div class="foot">   
+        <div class="foot-info">
+            <h4>Quick Links</h4>
+            <li><a href="../HOME/index.html">HOME</a></li>
+            <li><a href="../login/login.php">LOGIN</a></li>
+            <li><a href="../login/signup.php">REGISTER</a></li>
+            <li><a href="../LOANS/loan.html">LOANS AND SAVINGS</a></li>
+            <li><a href="../Services/services.html">SERVICES</a></li>
+            <li><a href="../contact us/contact.html">CONTACT US</a></li>
+             </div>
+        <div class="foot-info">
+       <h4>About</h4>
+       <li><a href="../About/membership.html">MEMBERSHIP</a></li>
+       <li><a href="../About/leadership.html">LEADERSHIP</a></li>
+       <li><a href="../About/history.html">HISTORY</a></li>
+   </div>
+    <div class="foot-info">
+   <h4>Apply for a loan</h4>
+  <li><a href="../LOANS/elimu.html">ELIMU LOAN</a></li>
+   <li><a href="../LOANS/emergency loan.html">EMERGENCY LOAN</a></li>
+   <li><a href="../LOANS/karibu loan.html">KARIBU</a></li>
+   <li><a href="../LOANS/personal.html">PERSONAL LOAN</a></li>
+   <li><a href="../LOANS/development.html">DEVELOPMENT LOAN</a></li>
+    </div>
+    <div class="foot-info">
+        <h4>Reach us</h4>
+        <li><a href="mailto:dennisndwiga32@gmail.com">SEND A MAIL</a></li>
+        <li><a href="https://wa.me/254731733407?text=Hello%20there%20I%20would%20like%20to%20know%20more%20on%20si.SWHAM">SEND A TEXT</a></li>
+        <li><a href="../contact us/contact.html">LEARN MORE</a></li>
+         </div>
+</div>
+<div class="social-links" target="blank">
+    <i class="fa fa-facebook"></i>
+    <a href="https://www.instagram.com/si.swham"><i class="fa fa-instagram"></i></a>
+    <a href="https://www.twitter.com/si_swham"><i class="fa fa-twitter"></i></a>
+    <a href="https://wa.me/254731733407?text=Hello%20there%20I%20would%20like%20to%20know%20more%20on%20si.SWHAM"><i class="fa fa-whatsapp"></i></a>
+<div class="bot">
+    <p>&COPY;2023 CLASSIC SACCO All Rights Reserved</p>
+</div>
+</div>
+</section>
+</body>
+</html>

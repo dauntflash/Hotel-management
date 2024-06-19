@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="shortcut icon" href="../../CLASSIC SACO LOGO.png" type="image/x-icon">
+        <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+        <title>Emergency loan</title>
+        <style>
+            
+
+ /* SECTION-1 */
+@font-face {
+    font-family: font-1;
+    src: url(../../FONTS/ElMessiri-Regular.ttf);
+}
+@font-face {
+    font-family: font-2;
+    src: url(../../FONTS/Poppins-Black.ttf);
+}
+@font-face {
+    font-family: font-3;
+    src: url(../../FONTS/Cako-Black.ttf);
+}
+@font-face {
+    font-family: font-4;
+    src: url(../../FONTS/Cako-Regular.ttf);
+}
+@font-face {
+    font-family: font-5;
+    src: url(../../FONTS/Poppins-Bold.ttf);
+}
+#sec-1{
+    padding-top: 20px;
+    text-align: center;
+}
+.head-cont{
+    border-bottom: 1px solid lightgreen;
+    margin: 20px;
+    display: flex;
+}
+.head-cont  img {
+    width: 200px;
+    height: 150px;
+}
+.head-cont  h1{
+    margin-top: 100px;
+    margin-left: 250px;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-family: font-3;
+    font-size: 4vw;
+}
+#navigation:not(.sticky){
+    text-align: center;
+    position: relative;
+    border: 1px solid blue;
+    transition: 3s;
+    color: blue;
+    margin-right: 200px;
+    margin-left: 200px;
+    border-radius: 5px;
+    margin-bottom: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    z-index: 1000;
+}
+.sticky{
+    position: fixed;
+    width: 100%;
+    top: 5px;
+    border: 1px solid blue;
+    transition: 1s;
+    background-color: blue;
+    color: white;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    justify-content: center;
+    z-index: 1000;
+    border-radius: 10px;
+}
+.sticky a{
+    color:white;
+    font-family: font-3;
+    text-decoration: none;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    position: relative;
+    display: inline-block;
+    border-right: 1px solid white;
+    border-left: 20px;
+    transition: 1s; 
+}
+#navigation:not(.sticky)  a{
+    color:blue;
+    text-decoration: none;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    position: relative;
+    display: inline-block;
+    border-left: 20px;
+    transition: 1s;
+} 
+#navigation:not(.sticky) .arrow {
+    color: blue;
+    border: solid blue;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    margin-bottom: 2px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+  }
+.sticky .arrow {
+    color: white;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    margin-bottom: 2px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+  }
+.active{
+    border-bottom: .5px solid blue;
+    background-color: lightgreen;
+}
+.dropdown > a{
+    transition: 1s;
+}
+.dropdown > a:hover{
+    border-bottom: 50px;
+    transition: all o.5s ease;
+}
+.dropdown{
+    position: relative;
+    display: inline-block;
+    transition: all o.5s ease;
+    max-width: fit-content;
+}
+.drop-content{
+    display: none;
+    position: absolute;
+    transition: all o.5s ease;
+    background-color: lightgreen;
+}
+.dropdown:hover .drop-content{
+    display: block;
+}
+.drop-content a{
+    display: block;
+    transition: all 0.5s ease;
+    color: blue;
+    border-bottom: .5px solid lightgreen;
+    padding-top: 5px;
+}
+.drop-content a:hover{
+    background-color: white;
+    color: blue;
+}
+#footer{
+    padding-top: 3rem;
+    height: auto;
+    background-color: #303036;
+    color: white;
+    border-radius: 200px 10px 10px 10px;
+}
+.down-nav > h1{
+    text-align: center;
+    font-family: font-3;
+    font-size: 40px;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+.down-nav{
+    padding: 10px;
+}
+.cont-info{
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: rgb(43, 43, 59);
+    padding-top: 20px;
+    width: 70%;
+    padding: 10px;
+}
+.info{
+    flex-basis: 25%;
+    padding: 10px;
+    border-left: 2px solid lightgreen;
+}
+.info .fa{
+    color: lightgreen;
+    font-size: 30px;
+    margin-top: 5px;
+    margin-right: 10px;
+}
+.cont-info p{
+    font-size: 15px;
+    margin-bottom: .5px #fff solid;
+    padding-bottom: 10px;
+}
+.cont-info a{
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 15px;
+    padding-top: 10px;
+}
+.foot{
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: rgb(43, 43, 59);
+    padding-top: 20px;
+    width: 90%;
+    padding: 30px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+.foot-info{
+    flex-basis: 25%;
+}
+.foot-info > h4{
+    border-bottom: 1px solid lightgreen;
+    width: fit-content;
+}
+.foot-info a{
+    text-decoration: underline;
+    color: lightgreen;
+}
+.foot-info li{
+    padding-top: 15px;
+    font-size: 15px;
+}
+.bot{
+    padding-top: 20px;
+    text-align: center;
+    padding-bottom: 30px;
+}
+.social-links{
+    text-align: center;
+}
+.social-links .fa{
+    height: 40px;
+    width: 40px;
+    font-size: 20px;
+    line-height: 40px;
+    border: 1px solid #009688;
+    margin: 40px 5px 0;
+    color: #009688;
+    cursor: pointer;
+    transition: .5s;
+}
+.social-links .fa:hover{
+    background: #009688;
+    color: #fff;
+    transform: translateY(-7px);
+}
+.social-links p{
+    font-size: 12px;
+    margin-top: 20px;
+}
+            .section p{
+                font-size:18px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: bold;
+                color: blue;
+            }
+            .list{
+                font-size: 17px;
+            }
+            body h2 {
+            background-image: url(f2.jpg);
+            opacity: 0.75;
+            padding: 30px;
+            border-radius: 10px;
+            font-size: 40px;
+            color: lightgreen;
+        }
+        .section{
+            display: flex;
+        }
+        .desc{
+            position: relative;
+            margin-left: 90px;
+            background-color: lightgrey;
+            width: fit-content;
+            height: fit-content;
+            margin-top: 70px;
+            border-radius: 10px;
+            
+        }
+        .btn a{
+    text-decoration: none;
+    color: brown;
+}
+.btn{
+    border: 1px #000 solid;
+    width: fit-content;
+    margin: 20px;
+    border-radius: 5px;
+}
+.btn:hover{
+    background-color: lightblue;
+}
+.img{
+    margin-left: 70px;
+}
+        
+        
+
+
+        </style>
+    </head>
+    <body>
+            <!-- SECTION 1 -->
+    <div class="head-cont">
+        <div>
+            <img src="../../CLASSIC SACO LOGO.png">
+        </div>
+        <div>
+            <h1>CLASSIC SACCO</h1>
+        </div>
+    </div>
+    <section id="sec-1">
+            <nav id="navigation">
+                <a href="../HOME/index.html">HOME</a>
+                <div class="dropdown">
+                    <a class="dropBtn">LOGIN <i class="arrow"></i></a>
+                    <div class="drop-content">
+                        <a href="#">JOIN US</a>
+                        <a href="#">LOGIN</a>
+                    </div>
+                 </div>
+                 <div class="dropdown">
+                    <a class="dropBtn">ABOUT US <i class="arrow"></i></a>
+                    <div class="drop-content">
+                        <a href="../About/membership.html">MEMBERSHIP</a>
+                        <a href="../About/leadership.html">LEADERSHIP</a>
+                        <a href="../About/history.html">HISTORY</a>
+                    </div>
+                 </div>
+                 <div class="dropdown">
+                    <a  class="active"  href="../LOANS/loan.html">LOANS <i class="arrow"></i></a>
+                    <div class="drop-content">
+                        <a href="../LOANS/elimu.html">ELIMU LOAN</a>
+                        <a href="../LOANS/emergency loan.html">EMERGENCY LOAN</a>
+                        <a href="../LOANS/karibu loan.html">KARIBU</a>
+                        <a href="../LOANS/personal.html">PERSONAL LOAN</a>
+                        <a href="../LOANS/development.html">DEVELOPMENT LOAN</a>
+                    </div>
+                 </div>
+                <a href="../Services/services.html">SERVICES</a>
+                <a href="../contact us/contact.html">CONTACT US</a>
+            </nav>
+
+
+
+            <script>
+                let navbar = document.getElementById("navigation");
+          
+          let shouldstickposition = navbar.offsetTop;
+                
+          function addorremovestickyclass(){
+            if (window.pageYOffset >= shouldstickposition) {
+                navbar.classList.add("sticky");
+            } else{
+                navbar.classList.remove("sticky");
+            }
+          }
+                
+           window.onscroll = () => {
+              addorremovestickyclass();
+          };
+          window.onresize = () => {
+          shouldstickposition = navbar.offsetTop;
+            };
+            </script>
+    </section>
+
+    <!-- SECCTION-2 -->
+        <h2>Loan Product</h2>
+
+        <div class="section">
+            <div class="img">
+                <h3 style="color: blue; font-size: 25px;">Emergency loan</h3>
+                <img src="karibu.jpg" alt="" height="350px" width="450px" style="border-radius: 5px;">
+            </div>
+            
+                <div class="desc">
+
+                    <p>Description</p>
+        
+              <ul type="none" class="list">
+                <li> This loan is designed to assist our members overcome unforeseen circumstances that arise. 
+                    This could include moneys for hospital bills, school fees, emergency capital injection for businesses etc.
+                     A member can take up to two emergency loans at a go..</li>
+              </ul>
+        <p>Loan details</p>
+        <ul class="list">
+            <li>  Maximum of two emergency loans at any given time;</li>
+            <li>Up to KShs. 400,000 for the two emergency loans repayable in 12 months;</li>
+            <li>
+                Interest rate is 1% per month on reducing balance;
+                </li>
+
+            </ul>
+        <div class="btn">
+            <a href="form.html">APPLY NOW&rarr;</a>
+        </div>
+                 </div>
+              
+            
+         
+
+        </div>
+        
+<!-- SECTION -->
+
+<section id="footer">
+    <div class="down-nav">
+        <h1>GET IN TOUCH</h1>
+        <div class="cont-info">
+        <div class="info">
+        <p>Call us</p><hr>
+       <i class="fa fa-phone"></i><a href="tel:+254758226928"> +254 75 822 6928</a><br>
+       <i class="fa fa-phone"></i><a href="tel:+254731733407"> +254 73 173 3407</a>
+        </div>
+        <div class="info">
+            <p>Text</p><hr>
+           <i class="fa fa-whatsapp"></i> <a href="https://wa.me/254731733407?text=Hello%20there%20I%20would%20like%20to%20know%20more%20on%20si.SWHAM"> +254 73 173 3407</a>
+            </div>
+        <div class="info">
+        <p>Email</p><hr>
+       <i class="fa fa-envelope-open"></i> <a href="mailto:dennisndwiga32@gmail.com">classicsacco@gmail.com</a>
+        </div>
+    </div>
+    </div>
+    <div class="foot">   
+        <div class="foot-info">
+            <h4>Quick Links</h4>
+            <li><a href="../HOME/index.html">HOME</a></li>
+            <li><a href="../login/login.php">LOGIN</a></li>
+            <li><a href="../login/signup.php">REGISTER</a></li>
+            <li><a href="../LOANS/loan.html">LOANS AND SAVINGS</a></li>
+            <li><a href="../Services/services.html">SERVICES</a></li>
+            <li><a href="../contact us/contact.html">CONTACT US</a></li>
+             </div>
+        <div class="foot-info">
+       <h4>About</h4>
+       <li><a href="../About/membership.html">MEMBERSHIP</a></li>
+       <li><a href="../About/leadership.html">LEADERSHIP</a></li>
+       <li><a href="../About/history.html">HISTORY</a></li>
+   </div>
+    <div class="foot-info">
+   <h4>Apply for a loan</h4>
+  <li><a href="../LOANS/elimu.html">ELIMU LOAN</a></li>
+   <li><a href="../LOANS/emergency loan.html">EMERGENCY LOAN</a></li>
+   <li><a href="../LOANS/karibu loan.html">KARIBU</a></li>
+   <li><a href="../LOANS/personal.html">PERSONAL LOAN</a></li>
+   <li><a href="../LOANS/development.html">DEVELOPMENT LOAN</a></li>
+    </div>
+    <div class="foot-info">
+        <h4>Reach us</h4>
+        <li><a href="mailto:dennisndwiga32@gmail.com">SEND A MAIL</a></li>
+        <li><a href="https://wa.me/254731733407?text=Hello%20there%20I%20would%20like%20to%20know%20more%20on%20si.SWHAM">SEND A TEXT</a></li>
+        <li><a href="../contact us/contact.html">LEARN MORE</a></li>
+         </div>
+</div>
+<div class="social-links" target="blank">
+    <i class="fa fa-facebook"></i>
+    <a href="https://www.instagram.com/si.swham"><i class="fa fa-instagram"></i></a>
+    <a href="https://www.twitter.com/si_swham"><i class="fa fa-twitter"></i></a>
+    <a href="https://wa.me/254731733407?text=Hello%20there%20I%20would%20like%20to%20know%20more%20on%20si.SWHAM"><i class="fa fa-whatsapp"></i></a>
+<div class="bot">
+    <p>&COPY;2023 CLASSIC SACCO All Rights Reserved</p>
+</div>
+</div>
+</section>
+    </body>
+</html>

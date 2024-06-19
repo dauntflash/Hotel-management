@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<head>
+    <title>Services</title>
+    <link rel="stylesheet" href="services.css">
+    <link rel="shortcut icon" href="../../CLASSIC SACO LOGO.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+</head>
+<body>
+    
+    <!-- SECTION 1 -->
+    <div class="head-cont">
+        <div>
+            <img src="../../CLASSIC SACO LOGO.png">
+        </div>
+        <div>
+            <h1>CLASSIC SACCO</h1>
+        </div>
+    </div>
+    <section id="sec-1">
+            <nav id="navigation">
+                <a href="../HOME/index.html">HOME</a>
+                <div class="dropdown">
+                    <a class="dropBtn" href="#">LOGIN <i class="arrow"></i></a>
+                    <div class="drop-content">
+                        <a href="#">JOIN US</a>
+                        <a href="#">LOGIN</a>
+                    </div>
+                 </div>
+                 <div class="dropdown">
+                    <a class="dropBtn" href="#">ABOUT US <i class="arrow"></i></a>
+                    <div class="drop-content">
+                        <a href="../About/membership.html">MEMBERSHIP</a>
+                        <a href="../About/leadership.html">LEADERSHIP</a>
+                        <a href="../About/history.html">HISTORY</a>
+                    </div>
+                 </div>
+                 <div class="dropdown">
+                    <a href="../LOANS/loan.html">LOANS <i class="arrow"></i></a>
+                    <div class="drop-content">
+                        <a href="../LOANS/elimu.html">ELIMU LOAN</a>
+                        <a href="../LOANS/emergency loan.html">EMERGENCY LOAN</a>
+                        <a href="../LOANS/karibu loan.html">KARIBU</a>
+                        <a href="../LOANS/personal.html">PERSONAL LOAN</a>
+                        <a href="../LOANS/development.html">DEVELOPMENT LOAN</a>
+                    </div>
+                 </div>
+                <a class="active" href="../Services/services.html">SERVICES</a>
+                <a href="../contact us/contact.html">CONTACT US</a>
+            </nav>
+            <script>
+                let navbar = document.getElementById("navigation");
+          
+          let shouldstickposition = navbar.offsetTop;
+                
+          function addorremovestickyclass(){
+            if (window.pageYOffset >= shouldstickposition) {
+                navbar.classList.add("sticky");
+            } else{
+                navbar.classList.remove("sticky");
+            }
+          }
+                
+           window.onscroll = () => {
+              addorremovestickyclass();
+          };
+          window.onresize = () => {
+          shouldstickposition = navbar.offsetTop;
+            };
+            </script>
+    </section>
+    <div class="services">
+        <div class="loans">
+            <h2>Loans</h2>
+            <p>We make your dream business come true by providing you with the necessary finances
+            you may require to start your income stream venture.</p>
+            <br>
+            <img src="../images/members.jpg" alt="image of person">
+            <h3>Indivudual Loans</h3>
+            <p>Members with well established businesses do not neeed group to obtain a loan. The loans are from 200,000 - 5,000,000 depending on the level that the busines is.</p>
+            <h3>Group Loans</h3>
+            <p>We enable groups to expand their current income generating ventures by making available for them finances based on tiers.</p>
+                <ul>
+                    <li>One-Tier -300,000-1,000,000 with 1.25% interest rates payable within 9months</li>
+                    <li>Two-Tier- 500,000-5,000,000 with 1.25% interest rates payable within 12months</li>
+                    <li>Three-Tier- 1,000,000-10,000,000 with 1.25% interest rates payable within 18months</li>
+                </ul>
+                <h3>Eligibility?</h3>
+                <ol>
+                    <li>Group MUST have maintained operation with the SACCO in the last 6months</li>
+                    <li>Loans above 500,000 to be secured with a collateral</li>
+                    <li>Have minimum saving of 20% of the total amount being borrowed</li>
+                </ol>
+                <a href="../LOANS/loan.html">More Info</a>
+        </div>
+        <div class="insurance">
+            <h2>Insurance</h2>
+            <p>Other than ensuring that our members save and get to borrow finances, Classic SACCO also ensures members are comfortabe in terms of health and the mental wellness. This is why we made available welfare services.</p>
+            <img src="../images/insurance.jpg" alt="image of person">
+            <h3>Risk fund</h3>
+            <ul>
+                <li>Compulsory for all members.</li>
+                <li>Monthly contribution of Ksh 500</li>
+            </ul>
+            <h3>Burial benevolent fund</h3>
+            <ul>
+                <li>Mandatory fund used to accord members as well as their family a decent send off.</li>
+                <li>Monthly comtribution of Kshs 500</li>
+            </ul>
+        </div>
+        <div class="advice">
+            <h2>Financial advice</h2>
+            <p>Unable to manage your finances effectively? We as Classic SACCO we got you. Our financial advicers have years of experience and will aid you in managing your resources for long-term benefits.</p>
+            <br>
+            <img src="../images/advice.jpg" alt="advice`">
+            <p>Book an appointment with one of our eperts today and take your financial literacy to the next level</p>
+            <a href="../contact us/contact.html">Reach Us</a>
+        </div>
+    </div>
+<!-- SECTION -->
+
+<section id="footer">
+    <div class="down-nav">
+        <h1>GET IN TOUCH</h1>
+        <div class="cont-info">
+        <div class="info">
+        <p>Call us</p><hr>
+       <i class="fa fa-phone"></i><a href="tel:+254758226928"> +254 75 822 6928</a><br>
+       <i class="fa fa-phone"></i><a href="tel:+254731733407"> +254 73 173 3407</a>
+        </div>
+        <div class="info">
+            <p>Text</p><hr>
+           <i class="fa fa-whatsapp"></i> <a href="https://wa.me/254731733407?text=Hello%20there%20I%20would%20like%20to%20know%20more%20on%20si.SWHAM"> +254 73 173 3407</a>
+            </div>
+        <div class="info">
+        <p>Email</p><hr>
+       <i class="fa fa-envelope-open"></i> <a href="mailto:dennisndwiga32@gmail.com">classicsacco@gmail.com</a>
+        </div>
+    </div>
+    </div>
+    <div class="foot">   
+        <div class="foot-info">
+            <h4>Quick Links</h4>
+            <li><a href="../HOME/index.html">HOME</a></li>
+            <li><a href="../login/login.php">LOGIN</a></li>
+            <li><a href="../login/signup.php">REGISTER</a></li>
+            <li><a href="../LOANS/loan.html">LOANS AND SAVINGS</a></li>
+            <li><a href="../Services/services.html">SERVICES</a></li>
+            <li><a href="../contact us/contact.html">CONTACT US</a></li>
+             </div>
+        <div class="foot-info">
+       <h4>About</h4>
+       <li><a href="../About/membership.html">MEMBERSHIP</a></li>
+       <li><a href="../About/leadership.html">LEADERSHIP</a></li>
+       <li><a href="../About/history.html">HISTORY</a></li>
+   </div>
+    <div class="foot-info">
+   <h4>Apply for a loan</h4>
+  <li><a href="../LOANS/elimu.html">ELIMU LOAN</a></li>
+   <li><a href="../LOANS/emergency loan.html">EMERGENCY LOAN</a></li>
+   <li><a href="../LOANS/karibu loan.html">KARIBU</a></li>
+   <li><a href="../LOANS/personal.html">PERSONAL LOAN</a></li>
+   <li><a href="../LOANS/development.html">DEVELOPMENT LOAN</a></li>
+    </div>
+    <div class="foot-info">
+        <h4>Reach us</h4>
+        <li><a href="mailto:dennisndwiga32@gmail.com">SEND A MAIL</a></li>
+        <li><a href="https://wa.me/254731733407?text=Hello%20there%20I%20would%20like%20to%20know%20more%20on%20si.SWHAM">SEND A TEXT</a></li>
+        <li><a href="../contact us/contact.html">LEARN MORE</a></li>
+         </div>
+</div>
+<div class="social-links" target="blank">
+    <i class="fa fa-facebook"></i>
+    <a href="https://www.instagram.com/si.swham"><i class="fa fa-instagram"></i></a>
+    <a href="https://www.twitter.com/si_swham"><i class="fa fa-twitter"></i></a>
+    <a href="https://wa.me/254731733407?text=Hello%20there%20I%20would%20like%20to%20know%20more%20on%20si.SWHAM"><i class="fa fa-whatsapp"></i></a>
+<div class="bot">
+    <p>&COPY;2023 CLASSIC SACCO All Rights Reserved</p>
+</div>
+</div>
+</section>
+</body>
+</html>

@@ -1,0 +1,33 @@
+
+body img{
+    margin: 20px;
+    border-radius: 10px;
+}
+.h1{
+    background-color: lightgreen;
+    padding-top: -10px;
+    padding-bottom: -10px;
+    border-radius: 10px;
+    color:brown;
+}
+
+.section{
+    display: flex;
+    justify-content: space-between;
+}
+.desc{
+    position: relative;
+}
+.btn a{
+    text-decoration: none;
+    color: brown;
+}
+.btn{
+    border: 1px #000 solid;
+    width: fit-content;
+    margin: 20px;
+    border-radius: 5px;
+}
+.btn:hover{
+    background-color: lightblue;
+}
