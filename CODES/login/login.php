@@ -1,6 +1,6 @@
-<?
+<?php
 session_start();
-if (isset($_SESSION["user"]='index.html')){
+if (isset($_SESSION["user"])){
     header("Location: index.php");
 }
 ?>
@@ -28,7 +28,7 @@ if (isset($_POST["login"])) {
             session_start();
             $_SESSION["user"] = true;
             $_SESSION["email"] = $email;
-            $_SESSION["username"] = $username;
+            $_SESSION["username"] = $user["username"];
             header("location: index.php");
             exit();
         } else {
@@ -53,3 +53,4 @@ if (isset($_POST["login"])) {
 </form>  
 </body>
 </html>
+

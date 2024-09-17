@@ -1,60 +1,14 @@
 <!DOCTYPE html>
 <html>
-    <link rel="shortcut icon" href="../../CLASSIC SACO LOGO.png" type="image/x-icon">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
-    <head>
-        <title>Personal loan</title>
-        <style>
+    <link rel="shortcut icon" href="../../CLASSIC SACO LOGO.png" type="image/x-icon">
+<head>
+	<title>Form Submission</title>
+</head>
+<style>
+ 
 
-            .section p{
-                font-size:18px;
-                font-family: Arial, Helvetica, sans-serif;
-                font-weight: bold;
-                color: blue;
-            }
-            .list{
-                font-size: 17px;
-            }
-            body h2 {
-            background-image: url(f2.jpg);
-            opacity: 0.75;
-            padding: 30px;
-            border-radius: 10px;
-            font-size: 40px;
-            color: lightgreen;
-        }
-        .section{
-            display: flex;
-        }
-        .desc{
-            position: relative;
-            margin-left: 90px;
-            background-color: lightgrey;
-            width: fit-content;
-            height: fit-content;
-            margin-top: 70px;
-            border-radius: 10px;
-            
-        }
-        .btn a{
-    text-decoration: none;
-    color: brown;
-}
-.btn{
-    border: 1px #000 solid;
-    width: fit-content;
-    margin: 20px;
-    border-radius: 5px;
-}
-.btn:hover{
-    background-color: lightblue;
-}
-.img{
-    margin-left: 150px;
-}
-
-
+            /* SECTION-1 */
 /* SECTION-1 */
 @font-face {
     font-family: font-1;
@@ -99,7 +53,6 @@
 }
 #navigation:not(.sticky){
     text-align: center;
-    position: relative;
     border: 1px solid blue;
     transition: 3s;
     color: blue;
@@ -313,102 +266,216 @@
     font-size: 12px;
     margin-top: 20px;
 }
-        </style>
-    </head>
-    <body>
-            <!-- SECTION 1 -->
-    <div class="head-cont">
-        <div>
-            <img src="../../CLASSIC SACO LOGO.png">
-        </div>
-        <div>
-            <h1>CLASSIC SACCO</h1>
-        </div>
+	
+	.td{
+padding: 10px;
+margin: 5px;
+
+}
+
+.sub{
+   border-radius: 10px;
+   
+}
+.section1{
+   background-color: lightgray;
+   width: fit-content;
+   margin-left: 400px;
+}
+.desc{
+   position: relative;
+   margin-left: 70px;
+   background-color: lightgreen;
+   height: fit-content;
+}
+.desc ul li a{
+
+   text-decoration: none;
+   text-decoration-color: aqua;
+}
+body h2 {
+		   background-image: url(f2.jpg);
+		   opacity: 0.75;
+		   padding: 30px;
+		   border-radius: 10px;
+		   font-size: 40px;
+		   color: lightgreen;
+		   text-align: center;
+	   }
+body h3{
+   background-image: url(f2.jpg);
+		   opacity: 0.75;
+		   padding: 10px;
+		   border-radius: 10px;
+		   font-size: 20px;
+		   color: lightgreen;
+		   text-align: center;
+}  
+body input:hover{
+
+   border-color: lightblue;
+}     
+
+
+
+   </style>
+<body>
+       <!-- SECTION 1 -->
+       <div class="head-cont">
+         <div>
+             <img src="../../CLASSIC SACO LOGO.png">
+         </div>
+         <div>
+             <h1>CLASSIC SACCO</h1>
+         </div>
+     </div>
+     <section id="sec-1">
+             <nav id="navigation">
+                 <a href="../../index.html">HOME</a>
+                 <div class="dropdown">
+                     <a class="dropBtn">LOGIN <i class="arrow"></i></a>
+                     <div class="drop-content">
+                         <a href="#">JOIN US</a>
+                         <a href="#">LOGIN</a>
+                     </div>
+                  </div>
+                  <div class="dropdown">
+                     <a class="dropBtn">ABOUT US <i class="arrow"></i></a>
+                     <div class="drop-content">
+                         <a href="../About/membership.html">MEMBERSHIP</a>
+                         <a href="../About/leadership.html">LEADERSHIP</a>
+                         <a href="../About/history.html">HISTORY</a>
+                     </div>
+                  </div>
+                  <div class="dropdown">
+                     <a  class="active"  href="">LOANS <i class="arrow"></i></a>
+                     <div class="drop-content">
+                         <a href="../LOANS/elimu.html">ELIMU LOAN</a>
+                         <a href="../LOANS/emergency loan.html">EMERGENCY LOAN</a>
+                         <a href="../LOANS/karibu loan.html">KARIBU</a>
+                         <a href="../LOANS/personal.html">PERSONAL LOAN</a>
+                         <a href="../LOANS/development.html">DEVELOPMENT LOAN</a>
+                     </div>
+                  </div>
+                 <a href="../Services/services.html">SERVICES</a>
+                 <a href="../contact us/contact.html">CONTACT US</a>
+             </nav>
+
+ 
+ 
+             <script>
+                 let navbar = document.getElementById("navigation");
+           
+           let shouldstickposition = navbar.offsetTop;
+                 
+           function addorremovestickyclass(){
+             if (window.pageYOffset >= shouldstickposition) {
+                 navbar.classList.add("sticky");
+             } else{
+                 navbar.classList.remove("sticky");
+             }
+           }
+                 
+            window.onscroll = () => {
+               addorremovestickyclass();
+           };
+           window.onresize = () => {
+           shouldstickposition = navbar.offsetTop;
+             };
+             </script>
+     </section>
+ 
+     <!-- SECCTION-2 -->
+	<form method="post" action="form.php">
+		<h2>Loan Application Form</h2>
+        <div class="section1">
+            <table cellpadding="6px">
+            <form action="form.php" method="post">
+                <tr>
+                   <td><label style="font-size:20px;">Application date</label></td> 
+                    <td class="td"><input type="date" name="application_date" id="application date" style="border-radius: 4px;"></td>
+                </tr>
+              <tr>
+                <td><h3 style="color: lightgreen;">APPLICATION DETAILS</h3></td>
+            </tr>
+            
+                <tr>
+                    <td><label  style="font-size:20px;" >Loan amount</label></td>
+                    <td class="td"><input type="text" required placeholder="0" name="currency" id="currency" style="border-radius: 4px;"></td>
+                
+                </tr>
+
+               <tr>
+                <td><label style="font-size:20px;">Annual Income</label></td>
+                <td class="td"><input type="text" required placeholder="0" name="annual_income" id="annual_income" style="border-radius: 4px;"></td>
+                
+               </tr>
+               
+               <tr>
+                <td><label style="font-size:20px;">First name</label></td>
+                <td class="td"><input type="text" required placeholder="firstname" name="first_name" id="fname" style="border-radius: 4px;" ></td>
+                
+               </tr>
+               
+               <tr>
+                <td><label style="font-size:20px;">Last name</label></td>
+                <td class="td"><input type="text" required placeholder="lastname" name="last_name" id="lastname" style="border-radius: 4px;" ></td>
+                
+               </tr>
+             
+               <tr>
+                <td><label style="font-size:20px;">Birth date</label></td>
+                <td class="td"><input type="date" name="birth_date" id="birth_date" style="margin-left: 40px;" style="border-radius: 4px;"></td>
+               </tr>
+             
+               <tr>
+                <td><label style="font-size:20px;">Marital status</label></td>
+                <td><select name="status">
+                    <option value="single"selected>Single</option>
+                    <option value="married"selected>Married</option>
+                    <option value="other"selected>Other</option>
+
+                </select></td>
+                </tr>
+
+
+              <tr>
+                <td><label style="font-size:20px;">Email</label></td>
+                <td class="td"><input type="email" placeholder="kipyegonfestus@gmail.com" name="email" id="email" style="border-radius: 4px;"></td> 
+              </tr>
+                 
+              <tr>  
+                <td><label  style="font-size:20px;">Phone</label></td>
+                <td class="td"><input type="tel"placeholder="+2547883838" name="phone" id="phone" style="border-radius: 4px;"></td>
+                </tr>
+               
+                <tr>
+                   <td> <label style="font-size:20px;">Address</label></td>
+                    <td class="td"><input type="text" placeholder="street address" name="address" id="address" style="border-radius: 4px;"></td>
+                    
+                </tr>
+                <tr>
+                        <td><label style="font-size:20px;">Loan Type</label></td>
+                        <td><select name="loans">
+                            <option value="Karibu Loan"selected>Karibu Loan</option>
+                            <option value="Personal Loan"selected>Personal Loan</option>
+                            <option value="Emergency Loan"selected>Emergency Loan</option>
+                            <option value="Development Loan"selected>Development Loan</option>
+                            <option value="Elimu Loan"selected>Elimu Loan</option>
+                        </select></td>
+                        </tr>
+                       
+
+                </tr>
+                
+              <td class="sub"><input type="submit" name="submit" value="Submit" style="background-color: lightgreen; border-radius: 3px;" ></td>
+                </tr>
+                 
+            </form>
+        </table>
     </div>
-    <section id="sec-1">
-            <nav id="navigation">
-                <a href="../HOME/index.html">HOME</a>
-                <div class="dropdown">
-                    <a class="dropBtn">LOGIN <i class="arrow"></i></a>
-                    <div class="drop-content">
-                        <a href="#">JOIN US</a>
-                        <a href="#">LOGIN</a>
-                    </div>
-                 </div>
-                 <div class="dropdown">
-                    <a class="dropBtn">ABOUT US <i class="arrow"></i></a>
-                    <div class="drop-content">
-                        <a href="../About/membership.html">MEMBERSHIP</a>
-                        <a href="../About/leadership.html">LEADERSHIP</a>
-                        <a href="../About/history.html">HISTORY</a>
-                    </div>
-                 </div>
-                 <div class="dropdown">
-                    <a  class="active"  href="../LOANS/loan.html">LOANS <i class="arrow"></i></a>
-                    <div class="drop-content">
-                        <a href="../LOANS/elimu.html">ELIMU LOAN</a>
-                        <a href="../LOANS/emergency loan.html">EMERGENCY LOAN</a>
-                        <a href="../LOANS/karibu loan.html">KARIBU</a>
-                        <a href="../LOANS/personal.html">PERSONAL LOAN</a>
-                        <a href="../LOANS/development.html">DEVELOPMENT LOAN</a>
-                    </div>
-                 </div>
-                <a href="../Services/services.html">SERVICES</a>
-                <a href="../contact us/contact.html">CONTACT US</a>
-            </nav>
-            <script>
-                let navbar = document.getElementById("navigation");
-          
-          let shouldstickposition = navbar.offsetTop;
-                
-          function addorremovestickyclass(){
-            if (window.pageYOffset >= shouldstickposition) {
-                navbar.classList.add("sticky");
-            } else{
-                navbar.classList.remove("sticky");
-            }
-          }
-                
-           window.onscroll = () => {
-              addorremovestickyclass();
-          };
-          window.onresize = () => {
-          shouldstickposition = navbar.offsetTop;
-            };
-            </script>
-    </section>
-
-    <!-- SECCTION-2 -->
-        <h2>Loan Product</h2>
-
-        <div class="section">
-            <div class="img">
-                <h3 style="color: blue; font-size: 25px;">Personal loan</h3>
-                <img src="E1.jpg" alt="" height="300px" width="450px" style="border-radius: 5px;">
-            </div>
-            
-                <div class="desc">
-
-         This facility enables Salary account holders to access loans
-
-        <p>Loan details</p>
-        <ul class="list">
-            <li >Interest rate of 1.5% per month on reducing balance </li>
-            <li >Pepayable in 60months</li>
-            <li >Based on 80% of members' gross pay</li>
-            <li >Irrevocable instructions to have salary pass through FOSA</li>
-            <li >Salary should be have passed through FOSA for at least 3 months </li>
-        </ul>
-        <div class="btn">
-            <a href="form.html">APPLY NOW&rarr;</a>
-        </div>
-                 </div>
-              
-            
-         
-
-        </div>
-        
+       
+	</form>
 <!-- SECTION -->
 
 <section id="footer">
@@ -433,7 +500,7 @@
     <div class="foot">   
         <div class="foot-info">
             <h4>Quick Links</h4>
-            <li><a href="../HOME/index.html">HOME</a></li>
+            <li><a href="../../index.html">HOME</a></li>
             <li><a href="../login/login.php">LOGIN</a></li>
             <li><a href="../login/signup.php">REGISTER</a></li>
             <li><a href="../LOANS/loan.html">LOANS AND SAVINGS</a></li>
@@ -471,15 +538,5 @@
 </div>
 </div>
 </section>
-    </body>
+</body>
 </html>
-
-
-
-
-
-
-
-
-
-

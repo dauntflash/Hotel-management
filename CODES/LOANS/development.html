@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="shortcut icon" href="../../CLASSIC SACO LOGO.png" type="image/x-icon">
-    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
     <head>
-        <title>Loan</title>
-    </head>
-    <style>
-        
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="shortcut icon" href="../../CLASSIC SACO LOGO.png" type="image/x-icon">
+        <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+        <title>Development loan</title>
+        <style>
+            
 
 /* SECTION-1 */
 @font-face {
@@ -267,42 +266,16 @@
     font-size: 12px;
     margin-top: 20px;
 }
-
-        body form{
-            text-align: center;
-        }
-        body a{
-            text-decoration: none;   
-        }
-        .section{
-            display: flex;  
-        }
-        .desc{
-            position: absolute;
-            margin-left: 30px;
-           margin-top: -20px;
-        }
-               .img{
-            width: 300px; 
-        }
-        #section{
-            display: flex;
-          justify-content: space-between; 
-        }
-        #desc{
-            position: relative;
-            
-        }
-        .s1{
-            margin-left: 150px;
-        }
-        .s2{
-            margin-right: 495px;
-        }
-        .s3{
-            margin-right: 110px;
-        }
-        body p{
+            .section p{
+                font-size:18px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: bold;
+                color: blue;
+            }
+            .list{
+                font-size: 17px;
+            }
+            body h2 {
             background-image: url(f2.jpg);
             opacity: 0.75;
             padding: 30px;
@@ -310,10 +283,44 @@
             font-size: 40px;
             color: lightgreen;
         }
-      
-    </style>
+        .section{
+            display: flex;
+        }
+        .desc{
+            position: relative;
+            margin-left: 90px;
+            background-color: lightgrey;
+            width: fit-content;
+            height: fit-content;
+            margin-top: 70px;
+            border-radius: 10px;
+            
+        }
+        
+        .btn a{
+    text-decoration: none;
+    color: brown;
+}
+.btn{
+    border: 1px #000 solid;
+    width: fit-content;
+    margin: 20px;
+    border-radius: 5px;
+}
+.btn:hover{
+    background-color: lightblue;
+}
+.img{
+    margin-left: 70px;
+}
+        
+        
+
+
+        </style>
+    </head>
     <body>
-    <!-- SECTION 1 -->
+            <!-- SECTION 1 -->
     <div class="head-cont">
         <div>
             <img src="../../CLASSIC SACO LOGO.png">
@@ -324,7 +331,7 @@
     </div>
     <section id="sec-1">
             <nav id="navigation">
-                <a href="../HOME/index.html">HOME</a>
+                <a href="../../index.html">HOME</a>
                 <div class="dropdown">
                     <a class="dropBtn">LOGIN <i class="arrow"></i></a>
                     <div class="drop-content">
@@ -355,6 +362,7 @@
             </nav>
 
 
+
             <script>
                 let navbar = document.getElementById("navigation");
           
@@ -378,96 +386,40 @@
     </section>
 
     <!-- SECCTION-2 -->
-        <p>Loan Product</p>
-        <div class="s0">
+        <h2>Loan Product</h2>
 
-        <h1 style="font-size: 40px; text-align: center;">Loans Scheme</h1>
-        <div id="section">
-            <div class="s1">
-                     <div class="section">
-                <div class="img">
-                 <a href="emergency loan.html"><img src="money.jpg" alt="" width="300px" height="200px" style="border-radius: 5px;"></a>
-                </div>
-               
-                <div class="desc">
-                    <a href="emergency loan.html"><h2 style="background-color: lightgrey; border-radius:2px;">Emergency Loan</h2></a>
-                </div>
-              
-            </div>
-            </div>
-       
-
-            <div id="desc">
-                   <div class="section">
+        <div class="section">
             <div class="img">
-              <a href="personal.html">  <img src="E1.jpg" alt="" width="300px" height="200px"  style="border-radius: 5px;"></a>
+                <h3 style="color: blue; font-size: 25px;">Development loan</h3>
+                <img src="development.jpg" alt="" height="350px" width="450px" style="border-radius: 5px;">
             </div>
-           
-            <div class="desc">
-                <a href="personal.html"><h2 style="background-color: lightgray; border-radius: 2px;">Personal Loan</h2></a>
-            </div>
-          
-        </div>
-            </div>
-
-<div class="s3">
-      <div class="section">
-                <div class="img">
-                 <a href="development.html"><img src="development.jpg" alt="" width="300px" height="200px"  style="border-radius: 5px;"></a>
-                </div>
-               
+            
                 <div class="desc">
-                    <a href="development.html"><h2 style="background-color: lightgrey; border-radius: 2px;">Development Loan</h2></a>
-                </div>
+
+                    <p>Description</p>
+        
+              <ul type="none" class="list">
+                <li>  Development Loan means a Mortgage Loan obtained by a Borrower for the purpose of acquiring, carrying and engaging in pre-development and development activities with respect to real property prior to the construction of improvements thereon,
+                     which activities shall include, without limitation, engineering, zoning</li>
+              </ul>
+        <p>Loan details</p>
+        <ul class="list">
+            <li>    The applicant must have been an active Sacco member for a period of not less than Six (6) months</li>
+            <li>Maximum loan is 3 times of the applicants SACCO Deposits</li>
+            <li>
+                All loans must be fully secured by guarantors or any other security approved by the Credit Committee.
+                </li>
+            </ul>
+        <div class="btn">
+            <a href="form.html">APPLY NOW&rarr;</a>
+        </div>
+                 </div>
               
-            </div>
-</div>
-   
-
-
+            
+         
 
         </div>
-
-        <br><br>
-
-         <div id="section">
-            <div class="s1">
-                     <div class="section">
-                <div class="img">
-                   <a href="karibu loan.html"> <img src="karibu.jpg" alt="" width="300px"
-                     height="200px"  style="border-radius: 5px;"></a>
-                </div>
-               
-                <div class="desc">
-                    <a href="karibu loan.html"><h2 style="background-color: lightgrey;
-                     border-radius: 2px;">Karibu Loan</h2></a>
-                </div>
-              
-            </div>
-            </div>
-
-            <div class="s2">
-                
-            <div id="desc">
-                   <div class="section">
-            <div class="img">
-               <a href="elimu.html"> <img src="elimu.jpg" alt="" width="300px" height="200px"  style="border-radius: 5px;"></a>
-            </div>
-           
-            <div class="desc">
-                <a href="elimu.html"><h2 style="background-color: lightgrey; border-radius: 2px; ">Elimu Loan</h2></a>
-            </div>
-          
-        </div>
-            </div>
-            </div>
-       
-         </div>
-
-
-          
-
-        </div>
+        
 <!-- SECTION -->
 
 <section id="footer">
@@ -492,7 +444,7 @@
     <div class="foot">   
         <div class="foot-info">
             <h4>Quick Links</h4>
-            <li><a href="../HOME/index.html">HOME</a></li>
+            <li><a href="../../index.html">HOME</a></li>
             <li><a href="../login/login.php">LOGIN</a></li>
             <li><a href="../login/signup.php">REGISTER</a></li>
             <li><a href="../LOANS/loan.html">LOANS AND SAVINGS</a></li>

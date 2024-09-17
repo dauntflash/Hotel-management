@@ -17,7 +17,7 @@ if (!isset($_SESSION["user"])){
     </style>
 </head>
 <body>
-    <h1 class="my-5">Hello, <b><?php echo htmlspecialchars($_SESSION['email']); ?></b>. Welcome to Dashboard.</h1>
+    <h1 class="my-5">Hello, <b><?php echo htmlspecialchars($_SESSION['username']); ?></b>. Welcome to your Dashboard.</h1>
     <p>
         <a href="reset-password.php" class="btn btn-warning">Reset Your Password</a><br>
         <a href="logout.php" class="btn btn-danger ml-3">Sign Out of Your Account</a>
